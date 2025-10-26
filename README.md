@@ -2,6 +2,16 @@
 
 A modern implementation of a classic telnet-style BBS server built with Python 3.11, asyncio, and SQLite.
 
+## Repository
+
+🔗 **GitHub**: https://github.com/haveard/bbs.git
+
+```bash
+# Clone the repository
+git clone https://github.com/haveard/bbs.git
+cd bbs
+```
+
 ## Features
 
 - 🔌 **Telnet-style interface** - Connect via telnet or any TCP client
