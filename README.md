@@ -93,21 +93,12 @@ bbs/
 ├── tests/             # Test suite
 ├── scripts/           # Utility scripts
 ├── docs/              # Documentation
-├── AGENT.md          # Instructions for AI agents
 └── README.md         # This file
 ```
 
 ## Development
 
-This project uses **UV** for Python environment management. **IMPORTANT**: See `AGENT.md` for detailed instructions for AI agents working on this project, including mandatory testing requirements and file organization rules.
-
-### ⚠️ For Agents and Developers
-
-**REQUIRED READING**: [AGENT.md](AGENT.md) - Contains critical development guidelines including:
-- Mandatory testing after every change
-- File organization rules (scripts/, docs/, tests/)
-- Testing workflow requirements
-- Development environment setup
+This project uses **UV** for Python environment management.
 
 ### Testing
 
