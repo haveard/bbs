@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  bbs:
+    build: .
+    container_name: pybbs
+    restart: unless-stopped
+    environment:
+      BBS_PORT: "2323"
+      BBS_DB_PATH: "/app/data/bbs.sqlite3"
+    ports:
+      - "2323:2323/tcp"
+    volumes:
+      - ./data:/app/data

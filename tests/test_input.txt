@@ -1,0 +1,6 @@
+manualuser
+manualpass
+2
+This is a manual test message from telnet!
+1
+4

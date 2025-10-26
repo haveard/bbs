@@ -1,0 +1,40 @@
+[project]
+name = "bbs"
+version = "0.1.0"
+description = "Telnet-style BBS server with multi-user support and SQLite persistence"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "bcrypt==4.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+    "pytest-asyncio>=1.2.0",
+    "pytest-timeout>=2.4.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = [
+    "-ra",
+    "--strict-markers",
+    "--strict-config",
+    "-v",
+]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "performance: marks tests as performance tests",
+]
+asyncio_mode = "auto"
+timeout = 30
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::PendingDeprecationWarning",
+]
